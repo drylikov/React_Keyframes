@@ -90,7 +90,3 @@ class extends Component {
 - Run `npm run build` to transpile the source code
 - Before submitting a PR, please run `npm run test`
 - Please [be welcoming](http://contributor-covenant.org/)
-
-## Author
-
-Naoyuki Kanezawa ([@nkzawa](https://twitter.com/nkzawa)) - [Vercel](https://vercel.com)
