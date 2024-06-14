@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "jest",
+    "prepublish": "lerna run prepublish",
+    "prettier": "prettier --write \"**/*.{js,jsx,json,ts,tsx,md,mdx,css,html,yml,yaml,scss}\"",
+    "publish-canary": "lerna version prerelease --preid canary --force-publish && release --pre",
+    "publish-stable": "lerna version --force-publish"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "5.1.1",
+    "@testing-library/react": "9.4.0",
+    "@types/jest": "25.1.2",
+    "@types/react": "16.9.19",
+    "jest": "25.1.0",
+    "lerna": "3.20.2",
+    "pre-commit": "1.2.2",
+    "prettier": "1.19.1",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "ts-jest": "25.2.0",
+    "typescript": "3.7.5"
+  }
+}
